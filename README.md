@@ -19,3 +19,6 @@ Wanted to update (and polish) some of my iOS skills.
 Each course has its own folder and inside are the different apps/projects. But here is the list:
 
 1. Slider Color Picker (UIKit Fundamentals)
+![colorsliderpicker](http://wilsonmunoz.net/etc/githubgifs/60daysofcodeiosudacity/uikit-essentials-sliderpicker.gif "colorsliderpicker")
+
+2. 
