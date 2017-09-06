@@ -18,7 +18,10 @@ Wanted to update (and polish) some of my iOS skills.
 ### Projects
 Each course has its own folder and inside are the different apps/projects. But here is the list:
 
-**Slider Color Picker (UIKit Fundamentals)**
+**Slider Color Picker (UIKit Fundamentals/sliderColorPicker)**
 
 ![colorsliderpicker](http://wilsonmunoz.net/etc/githubgifs/60daysofcodeiosudacity/uikit-essentials-sliderpicker.gif "colorsliderpicker")
 
+**Simple Alert (UIKit Fundamentals/PresentControllers)**
+
+![presentalert](http://wilsonmunoz.net/etc/githubgifs/60daysofcodeiosudacity/uikit-essentials-presentalert.gif "presentalert")
