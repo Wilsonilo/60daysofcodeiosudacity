@@ -25,3 +25,7 @@ Each course has its own folder and inside are the different apps/projects. But h
 **Simple Alert (UIKit Fundamentals/PresentControllers)**
 
 ![presentalert](http://wilsonmunoz.net/etc/githubgifs/60daysofcodeiosudacity/uikit-essentials-presentalert.gif "presentalert")
+
+**Text Fields Delegates (UIKit Fundamentals/delegatesTextFields)**
+
+![textfields](http://wilsonmunoz.net/etc/githubgifs/60daysofcodeiosudacity/uikit-essentials-textfieldsdelegates.gif "textfields")
