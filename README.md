@@ -18,6 +18,7 @@ Wanted to update (and polish) some of my iOS skills.
 ### Projects
 Each course has its own folder and inside are the different apps/projects. But here is the list:
 
+#### UIKit Essentials
 **Slider Color Picker (UIKit Fundamentals/sliderColorPicker)**
 
 ![colorsliderpicker](http://wilsonmunoz.net/etc/githubgifs/60daysofcodeiosudacity/uikit-essentials-sliderpicker.gif "colorsliderpicker")
@@ -40,3 +41,12 @@ Each course has its own folder and inside are the different apps/projects. But h
 **Meme Generator v2 (UIKit Fundamentals/memeGeneratorv2)**
 
 ![memegeneratorv2](http://wilsonmunoz.net/etc/githubgifs/60daysofcodeiosudacity/uikit-essentials-memegeneratorv2.gif "memegeneratorv2")
+
+
+### GCD
+
+*There are two playground for the introduction of this course. /gcdPracties && /clousuresLearning both with small practices*
+
+**Sync, Async and Asynd with Clousere GCD (GCD/syncAsyncAndAsyncWithClousure)**
+
+![gcd-syncasync](http://wilsonmunoz.net/etc/githubgifs/60daysofcodeiosudacity/gcd-syncasync.gif "gcd-syncasync")
