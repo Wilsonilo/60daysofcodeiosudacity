@@ -51,3 +51,10 @@ ___
 **Sync, Async and Asynd with Clousere GCD (GCD/syncAsyncAndAsyncWithClousure)**
 
 ![gcd-syncasync](http://wilsonmunoz.net/etc/githubgifs/60daysofcodeiosudacity/gcd-syncasync.gif "gcd-syncasync")
+
+
+___
+### Obj-C for Swift Developers
+
+*There are two projects in command line mode for the first lessons. /creatingAndInitClasses and /rockPaperSissorsCommandLine
+
