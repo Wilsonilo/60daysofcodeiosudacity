@@ -1,7 +1,7 @@
 # Udacity 60 days of code, iOS path.
 
 ## About
-Wanted to update (and polish) some of my iOS skills.
+Wanted to update (and polish) some of my iOS knowloedge.
 
 ## Path:
 - https://www.udacity.com/course/uikit-fundamentals--ud788
@@ -56,5 +56,9 @@ ___
 ___
 ### Obj-C for Swift Developers
 
-*There are two projects in command line mode for the first lessons. /creatingAndInitClasses and /rockPaperSissorsCommandLine
+*There are two projects in command line mode for the first lessons. /creatingAndInitClasses and /rockPaperSissorsCommandLine*
+
+**Gif Maker OBJCFotSwiftDevelopers/gifMaker**
+
+![giftmaker](http://wilsonmunoz.net/etc/githubgifs/60daysofcodeiosudacity/objc-for-swift-giftmaker.gif "giftmaker")
 
