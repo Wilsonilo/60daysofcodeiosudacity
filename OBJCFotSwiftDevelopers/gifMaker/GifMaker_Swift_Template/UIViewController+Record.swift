@@ -18,6 +18,16 @@ let frameRate = 15
 let delayTime: Float = 0.2
 let loopCount = 0
 
+//PATH for GIFS
+let GIFSURL:String = URL(fileURLWithPath: NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]).appendingPathComponent("savedGifs").absoluteString
+
+var gifsFilePath: String {
+    let directories = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+    let documentsPath = URL(string: directories.first!)?.appendingPathComponent("savedGifs")
+    return (documentsPath?.absoluteString)!
+}
+
+
 //MARK: - UIViewCotnroller General
 extension UIViewController {
     
@@ -54,8 +64,8 @@ extension UIViewController {
         UIPickerInit.mediaTypes = [kUTTypeMovie as String]
         UIPickerInit.delegate = self
         
-        present(UIPickerInit, animated: true, completion: nil)
-        
+        self.navigationController?.present(UIPickerInit, animated: true, completion: nil)
+
     }
     
     func launchPhotoLibrary(){
@@ -66,7 +76,7 @@ extension UIViewController {
         UIPickerInit.mediaTypes = [kUTTypeMovie as String]
         UIPickerInit.delegate = self
         
-        present(UIPickerInit, animated: true, completion: nil)
+       self.navigationController?.present(UIPickerInit, animated: true, completion: nil)
     
     }
     

@@ -20,6 +20,7 @@ class WelcomeViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         self.welcomGif.loadGif(name: "hotlineBling")
+        UserDefaults.standard.set(true, forKey: "WelcomeViewSeen")
     }
     
     override func viewDidLoad() {

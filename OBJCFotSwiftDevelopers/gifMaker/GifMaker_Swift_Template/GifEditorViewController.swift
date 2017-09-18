@@ -53,15 +53,23 @@ class GifEditorViewController: UIViewController, UITextFieldDelegate {
         //Conform gif
         let newRegif = Regift(sourceFileURL: (self.gifElement?.videoURL)!, destinationFileURL: nil, frameCount: frameCount, delayTime: delayTime, loopCount: 0)
         let gifWithCaption = newRegif.createGif(caption: self.addCaption.text, font: self.addCaption.font)
-        let finalGif = Gif(url: gifWithCaption!, videoURL: (self.gifElement?.url)!, caption: self.addCaption.text)
+        let finalGif = Gif(url: gifWithCaption!, videoURL: (self.gifElement?.videoURL)!, caption: self.addCaption.text)
 
-//        //Prepare PreviewViewController
+        //Prepare PreviewViewController
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
         let previewVC = storyboard.instantiateViewController(withIdentifier: "PreviewViewController") as! PreviewViewController
         previewVC.gif = finalGif
+        for viewcontroller in (self.navigationController?.viewControllers)!{
+            
+            if viewcontroller is SavedGifsViewController{
+                print("declared protocol delegate")
+                previewVC.delegate = viewcontroller as! SavedGifsViewController
+            }
+            
+        }
         
         //Present
-        self.present(previewVC, animated: true, completion: nil)
+        self.navigationController?.pushViewController(previewVC, animated: true)
         
     }
     

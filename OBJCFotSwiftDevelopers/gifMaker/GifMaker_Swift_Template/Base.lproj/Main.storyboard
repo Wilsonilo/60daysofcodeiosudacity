@@ -21,17 +21,17 @@
                         <color key="tintColor" red="1" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="aXC-Xw-CZL" kind="relationship" relationship="rootViewController" id="O6U-Pr-xGP"/>
+                        <segue destination="upq-jB-3dI" kind="relationship" relationship="rootViewController" id="vre-FM-HeM"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DM2-vZ-vXy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1885.5" y="-783.75"/>
+            <point key="canvasLocation" x="-1769" y="-787"/>
         </scene>
         <!--My Collection-->
         <scene sceneID="ALv-Et-lNO">
             <objects>
-                <viewController title="My Collection" useStoryboardIdentifierAsRestorationIdentifier="YES" id="upq-jB-3dI" customClass="SavedGifsViewController" customModule="GifMaker_Swift_Template" sceneMemberID="viewController">
+                <viewController title="My Collection" useStoryboardIdentifierAsRestorationIdentifier="YES" id="upq-jB-3dI" customClass="SavedGifsViewController" customModule="GifMaker_Swift_Template" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="E4A-ch-Oxv"/>
                         <viewControllerLayoutGuide type="bottom" id="zVw-uv-suS"/>
@@ -50,7 +50,7 @@
                                     <inset key="sectionInset" minX="8" minY="8" maxX="8" maxY="8"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GifCell" id="2ru-Ed-G6h" customClass="GifCell">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="2ru-Ed-G6h" customClass="SavedGifCollectionViewCell" customModule="GifMaker_Swift_Template" customModuleProvider="target">
                                         <rect key="frame" x="99" y="8" width="177" height="177"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -84,13 +84,13 @@
                                             </mask>
                                         </variation>
                                         <connections>
-                                            <outlet property="gifImageView" destination="sHD-OW-keS" id="VAe-LJ-h3J"/>
+                                            <outlet property="gifImage" destination="sHD-OW-keS" id="IXI-Zh-R4b"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
-                                    <outlet property="dataSource" destination="upq-jB-3dI" id="Dq5-qq-gcM"/>
-                                    <outlet property="delegate" destination="upq-jB-3dI" id="7YP-ZL-2L5"/>
+                                    <outlet property="dataSource" destination="upq-jB-3dI" id="3Y4-KI-6D0"/>
+                                    <outlet property="delegate" destination="upq-jB-3dI" id="idO-TJ-rtl"/>
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhk-Vz-Mtq">
@@ -100,6 +100,9 @@
                                     <constraint firstAttribute="height" constant="60" id="nD5-xT-Xdf"/>
                                 </constraints>
                                 <state key="normal" image="createButton"/>
+                                <connections>
+                                    <action selector="presentVideoOptionsWithSender:" destination="upq-jB-3dI" eventType="touchUpInside" id="N2o-Iu-Fca"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="rBY-mr-O59">
                                 <rect key="frame" x="16" y="261.5" width="343" height="144"/>
@@ -160,10 +163,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="My Collection" id="7HF-Yq-Lti"/>
+                    <connections>
+                        <outlet property="collectionView" destination="hbv-Kk-KXX" id="iKo-zX-nji"/>
+                        <outlet property="emptyView" destination="rBY-mr-O59" id="7J3-td-uIa"/>
+                        <segue destination="gN0-HT-VRx" kind="show" id="8DN-YS-NxJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1mO-R1-5Re" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-135" y="-111"/>
+            <point key="canvasLocation" x="-910" y="-786"/>
         </scene>
         <!--Add a Caption-->
         <scene sceneID="7IM-YL-IPR">
@@ -208,14 +216,13 @@
                         <barButtonItem key="rightBarButtonItem" title="Next" id="kvy-5V-EgW">
                             <color key="tintColor" red="1" green="0.25490196079999999" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <action selector="presentPreviewWithSender:" destination="gN0-HT-VRx" id="avH-Iz-VnS"/>
+                                <action selector="presentPreviewWithSender:" destination="gN0-HT-VRx" id="CJ9-gm-AAI"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="addCaption" destination="Hx5-Iw-gBr" id="3EY-dm-nfe"/>
                         <outlet property="gigImage" destination="Idg-S9-dYE" id="5Lj-OP-jAC"/>
-                        <segue destination="cB7-Y1-ZFX" kind="show" identifier="preview" id="gaw-os-O45"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XSQ-pK-rKN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -294,7 +301,7 @@
         <!--DetailViewController-->
         <scene sceneID="l2Z-NT-AXf">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ilf-GF-t1a" userLabel="DetailViewController" customClass="DetailViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ilf-GF-t1a" userLabel="DetailViewController" customClass="DetailViewController" customModule="GifMaker_Swift_Template" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="141-ek-2z6"/>
                         <viewControllerLayoutGuide type="bottom" id="8DJ-Ka-ETF"/>
@@ -313,6 +320,9 @@
                                 <state key="normal" title="SHARE">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="share:" destination="Ilf-GF-t1a" eventType="touchUpInside" id="y3L-wd-Q1k"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fMj-xi-5Fm">
                                 <rect key="frame" x="16" y="162" width="343" height="343"/>
@@ -327,6 +337,9 @@
                                     <constraint firstAttribute="width" constant="44" id="aAD-pY-dof"/>
                                 </constraints>
                                 <state key="normal" image="Close"/>
+                                <connections>
+                                    <action selector="close:" destination="Ilf-GF-t1a" eventType="touchUpInside" id="CBG-hz-Weh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.18039215689999999" green="0.23921568630000001" blue="0.28235294119999998" alpha="0.89705230496453903" colorSpace="custom" customColorSpace="sRGB"/>
@@ -342,10 +355,13 @@
                             <constraint firstItem="8DJ-Ka-ETF" firstAttribute="top" secondItem="tie-bE-ygI" secondAttribute="bottom" constant="20" id="zYz-Sa-xDb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="image" destination="fMj-xi-5Fm" id="YdO-Gv-sNs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BEl-4x-y0s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="748" y="-111"/>
+            <point key="canvasLocation" x="-135" y="-120"/>
         </scene>
         <!--Welcome View Controller-->
         <scene sceneID="MO7-ys-2QJ">
@@ -384,7 +400,7 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="createButton"/>
                                 <connections>
-                                    <action selector="presentVideoOptionsWithSender:" destination="aXC-Xw-CZL" eventType="touchUpInside" id="7Hv-EN-8ix"/>
+                                    <action selector="presentVideoOptionsWithSender:" destination="aXC-Xw-CZL" eventType="touchUpInside" id="cEx-bg-6wo"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mvh-6r-tbq">
@@ -491,12 +507,11 @@
                     <navigationItem key="navigationItem" id="GOk-gI-dlu"/>
                     <connections>
                         <outlet property="welcomGif" destination="Wun-5B-Ruk" id="QJj-Ao-wZ7"/>
-                        <segue destination="gN0-HT-VRx" kind="show" identifier="showGifEditor" id="wkV-9i-gKS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IJp-h7-HxK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1026" y="-783.75"/>
+            <point key="canvasLocation" x="-999" y="-1576"/>
         </scene>
     </scenes>
     <resources>
