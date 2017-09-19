@@ -11,12 +11,12 @@
 
 @interface Book : NSObject
 
-@property (nonatomic) NSString *title;
-@property (nonatomic) Person *author;
+@property (nonatomic) NSString * _Nonnull title;
+@property (nonatomic) Person *  _Nonnull author;
 @property (nonatomic) int yearOfPublication;
 
--(instancetype)initWithTitle:(NSString*)title
-                      author:(NSString*)author
-                        year:(int)year;
+-(instancetype _Nullable)initWithTitle:(NSString*  _Nonnull)title
+                      author:(NSString*  _Nonnull)author
+                        year:(int ) year;
 
 @end
