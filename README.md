@@ -62,3 +62,9 @@ ___
 
 ![giftmaker](http://wilsonmunoz.net/etc/githubgifs/60daysofcodeiosudacity/objc-for-swift-giftmaker.gif "giftmaker")
 
+___
+### Swift Networking
+
+*There are two projects without images that are mere practices, no need for gif. SwiftNetworking/ImageRequest and SwiftNetworking/SleepingInTheLibrary*
+
+
