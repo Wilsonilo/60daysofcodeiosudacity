@@ -16,7 +16,8 @@ Wanted to update (and polish) some of my iOS knowloedge.
 - https://www.udacity.com/course/continuous-integration-and-deployment--ud1030
 
 ## Projects
-Each course has its own folder and inside are the different apps/projects.
+* Each course has its own folder and inside are the different apps/projects.
+* Some of the projects contain a .gitignore for the Keys.plist or other files that contain sensite data / API Keys.
 
 ___
 ### UIKit Essentials
