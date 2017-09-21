@@ -60,7 +60,7 @@ ___
 
 **Gif Maker OBJCFotSwiftDevelopers/gifMaker**
 
-![giftmaker](http://wilsonmunoz.net/etc/githubgifs/60daysofcodeiosudacity/objc-for-swift-giftmaker.gif "giftmaker")
+http://wilsonmunoz.net/etc/githubgifs/60daysofcodeiosudacity/objc-for-swift-giftmaker.gif
 
 ___
 ### Swift Networking
