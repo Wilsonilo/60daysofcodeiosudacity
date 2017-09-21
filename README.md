@@ -60,11 +60,13 @@ ___
 
 **Gif Maker OBJCFotSwiftDevelopers/gifMaker**
 
-http://wilsonmunoz.net/etc/githubgifs/60daysofcodeiosudacity/objc-for-swift-giftmaker.gif
+![objc-for-swift-giftmaker](http://wilsonmunoz.net/etc/githubgifs/60daysofcodeiosudacity/objc-for-swift-giftmaker.gif "objc-for-swift-giftmaker")
 
 ___
 ### Swift Networking
 
 *There are two projects without images that are mere practices, no need for gif. SwiftNetworking/ImageRequest and SwiftNetworking/SleepingInTheLibrary*
 
+**Flickr Finder SwiftNetworking/FlickFinder**
 
+![flickrimg](http://wilsonmunoz.net/etc/githubgifs/60daysofcodeiosudacity/swift-networking-flickrimg.gif "flickrimg")
