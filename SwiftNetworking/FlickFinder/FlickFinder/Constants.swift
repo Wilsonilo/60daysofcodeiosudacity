@@ -77,7 +77,7 @@ struct Constants {
      }
      */
     
-    //Using Keys.plist for Secret and API KEY
+    //MARK: - Using Keys.plist for Secret and API KEY
     //https://stackoverflow.com/questions/30803244/how-to-hide-api-keys-in-github-for-ios-swift-projects
     static func giveMeAPIKey()-> String {
         if let path = Bundle.main.path(forResource: "Keys", ofType: "plist") {

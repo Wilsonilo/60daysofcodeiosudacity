@@ -66,8 +66,14 @@ ___
 ___
 ### Swift Networking
 
-*There are two projects without images that are mere practices, no need for gif. SwiftNetworking/ImageRequest and SwiftNetworking/SleepingInTheLibrary*
+* *There are two projects without images that are mere practices, no need for gif. SwiftNetworking/ImageRequest and SwiftNetworking/SleepingInTheLibrary*
+* *For Flickr you will need an APIKey*
+* *For MovieManager you will need an APIKey of themoviedb.org*
 
 **Flickr Finder SwiftNetworking/FlickFinder**
 
 ![flickrimg](http://wilsonmunoz.net/etc/githubgifs/60daysofcodeiosudacity/swift-networking-flickrimg.gif "flickrimg")
+
+**Movie Manager SwiftNetworking/TheMovieManagerr**
+
+![moviemanager](http://wilsonmunoz.net/etc/githubgifs/60daysofcodeiosudacity/swift-networking-moviemanager.gif "moviemanager")
