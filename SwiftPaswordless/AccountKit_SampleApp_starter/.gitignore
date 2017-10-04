@@ -1,0 +1,8 @@
+AccountKit_SampleApp/FBSDKShareKit.framework
+AccountKit_SampleApp/FBSDKLoginKit.framework
+AccountKit_SampleApp/FBSDKCoreKit.framework
+AccountKit_SampleApp/FFacebookSDKStrings.bundle
+AccountKit_SampleApp/Bolts.framework
+AccountKit_SampleApp/AccountKitStrings.bundle
+AccountKit_SampleApp/AccountKit.framework
+AccountKit_SampleApp/Info.plist

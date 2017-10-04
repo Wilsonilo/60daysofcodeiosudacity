@@ -1,0 +1,7 @@
+FBSDKShareKit.framework
+FBSDKLoginKit.framework
+FBSDKCoreKit.framework
+Bolts.framework
+AccountKitStrings.bundle
+AccountKit.framework
+AccountKit_SampleApp/Info.plist
