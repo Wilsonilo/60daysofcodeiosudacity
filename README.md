@@ -89,3 +89,12 @@ ___
 **SwiftPaswordless/AccountKit_SampleApp_starter** && **SwiftPaswordless/AccountKit_SampleApp_OpenGraph_starter**
 
 ![passwordless](http://wilsonmunoz.net/etc/githubgifs/60daysofcodeiosudacity/swift-passwordless.gif "passwordless")
+
+___
+### Continuous Integration
+
+* Integrated with buddybuild.com
+
+**continuous-integration**
+
+![continues-integration](http://wilsonmunoz.net/etc/githubgifs/60daysofcodeiosudacity/continues-integration.gif "continues-integration")
