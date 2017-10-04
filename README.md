@@ -77,3 +77,12 @@ ___
 **Movie Manager SwiftNetworking/TheMovieManagerr**
 
 ![moviemanager](http://wilsonmunoz.net/etc/githubgifs/60daysofcodeiosudacity/swift-networking-moviemanager.gif "moviemanager")
+
+___
+### Swift Powerless
+
+* *Info.plist and Dependencies are ignored to avoid heavy projects and ID/Secret keys from Facebook, check: https://developers.facebook.com/docs/facebook-login/ios/* *
+
+**SwiftPaswordless/AccountKit_SampleApp_starter**
+
+![passwordless](http://wilsonmunoz.net/etc/githubgifs/60daysofcodeiosudacity/swift-passwordless.gif "passwordless")
