@@ -3,6 +3,8 @@
 ## About
 Wanted to update (and polish) some of my iOS knowloedge.
 
+Started: *Sept 05 2017*
+
 ## Path:
 - https://www.udacity.com/course/uikit-fundamentals--ud788
 - https://www.udacity.com/course/grand-central-dispatch-gcd--ud576
@@ -12,8 +14,9 @@ Wanted to update (and polish) some of my iOS knowloedge.
 - https://www.udacity.com/course/ios-networking-with-swift--ud421
 - https://www.udacity.com/course/ios-persistence-and-core-data--ud325
 - https://www.udacity.com/course/passwordless-login-solutions-for-ios--ud1028
-- https://www.udacity.com/course/server-side-swift--ud1031
+- <del>https://www.udacity.com/course/server-side-swift--ud1031</del> **Postponed**
 - https://www.udacity.com/course/continuous-integration-and-deployment--ud1030
+- https://www.udacity.com/course/how-to-make-an-ios-app--ud607
 
 ## Projects
 * Each course has its own folder and inside are the different apps/projects.
